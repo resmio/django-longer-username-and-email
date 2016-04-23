@@ -2,9 +2,16 @@
 
 Note that [Django 1.5 or newer already includes support for custom `User` models][releasenotes15] (read [this tutorial][tutorial] and the [official documentation about *Substituting a custom User model*][documentation15]). So, you only need `django-longerusernameandemail` if you use an older Django version, or if you don't want to create your own User model for some reason.
 
+Also note that:
+
+* in Django 1.8 email length increased to [254 characters][ticket20631]
+* in Django 1.10 username length increased to [150 characters][ticket20846].
+
 [tutorial]: http://procrastinatingdev.com/django/using-configurable-user-models-in-django-1-5/
-[releasenotes15]: https://docs.djangoproject.com/en/1.5/releases/1.5/#configurable-user-model
-[documentation15]: https://docs.djangoproject.com/en/1.5/topics/auth/customizing/#auth-custom-user
+[releasenotes15]: https://docs.djangoproject.com/en/dev/releases/1.5/#configurable-user-model
+[documentation15]: https://docs.djangoproject.com/en/dev/topics/auth/customizing/#auth-custom-user
+[ticket20631]: https://code.djangoproject.com/ticket/20631
+[ticket20846]: https://code.djangoproject.com/ticket/20846
 
 
 Usage
